@@ -1,6 +1,9 @@
 # pip install mysqlclient
 
 # c:\xampp\mysql\bin\mysql -u root < script_creacion.sql
+
+# C:\xampp\mysql\bin\mysql -u root < ecotech_db.sql
+
 import MySQLdb
 
 def test():
@@ -9,7 +12,7 @@ def test():
             host="localhost",
             user="root",
             passwd="",
-            db="clinica_vs"
+            db="ecotech_db"
         )
         print("Conexion exitosa!")
         cursor = conexion.cursor()
